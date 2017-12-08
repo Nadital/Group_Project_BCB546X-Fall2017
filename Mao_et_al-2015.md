@@ -18,7 +18,7 @@ At the phylum level, 22 bacterial phyla or groups were identified in mucosal sam
 
 As shown in the table above and the figure below, Firmicutes dominated all mucosa-associated bacterial communities along the GITs, except for in the duodenum. 
 
-[![phyla_dairy_cattle_BCB_group_project.jpg](https://s7.postimg.org/5mac9v1sr/phyla_dairy_cattle_BCB_group_project.jpg)](https://postimg.org/image/ki8vhgd7b/)
+[![phyla_dairy_cattle_BCB_group_project.jpg](https://s7.postimg.org/hr4ayse4r/phyla_dairy_cattle_BCB_group_project.jpg)](https://postimg.org/image/9lm90mpvr/)
 
 In the original paper, the data analysis was comprehensive but lacked documentation. Per the materials and methods, the amplicons were paired-end seqeunced on an Illumina MiSeq platform and raw FASTQ files were receved. These raw FASTQ files were demultiplexed and quality filtered using QIIME 1.70 with a variety of criteria. Unassembled reads were discarded. They clustered OTUs with a 97% similarity cut-off using UPARSE. They used UCHIME to identify and remove chimeric sequences. They designated ‘representative sequences’ as the most abundant sequences within each OTU. These representative sequences were then aligned against Greengenes 13.5 using PYNAST. Alignment was conducted with the default parameters set by QIIME. QIIME-provided PH Lane mask was used to remove hypervariable regions from the aligned sequences. The authors then generated a phylogenetic tree of the assigned representative sequences, using FASTTREE. Finally, sequence classification was conducted with the Ribosomal Database Project (RDP) with an 80 % standard minimum support threshold. 
 
@@ -40,3 +40,5 @@ Visualization: in this step, using the Qiime software and R software, we were ab
 **<i>Summarization of replication of original results:</i>**
 
 We were unable to replicate the results with Mothur, but we were able to complete the analysis with QIIME on one rumen mucosa sample from one cow. The phylum breakdown from this one sample does not represent the collective data from every cow. This can be seen in the breakdowns of the phyla. We noticed that the phylum composition shift is not completely identical between the single sample versus the entirety. In our sample in particular, Proteobacteria seem to be in higher abundance than Bacteroidetes, for example. However, all the major representative phyla are there in both analyses, indicating that if all samples were run through our pipeline, the combined data would be very similar to their data.
+
+[![QIIME_results.jpg](https://s7.postimg.org/4a7cfy6e3/QIIME_results.jpg)](https://postimg.org/image/5chiyhp7b/)
