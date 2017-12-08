@@ -9,7 +9,7 @@ Provides information on the paper selected for analysis, explains the technical 
 Directory containing all annotated codes used for our replication in Jupyter Notebook.  
 
 *Includes:*  
--Udderly_Confused_Python_Notebook.ipynb
+-Udderly_Confused_Python_Notebook.ipynb  
 -Mothur_Python_Notebook.ipynb
   
 **Udderly_Confused_Data_and_Links:**  
