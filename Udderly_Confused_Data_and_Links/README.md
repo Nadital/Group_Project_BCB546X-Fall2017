@@ -17,9 +17,9 @@ Here are the links to data utilized to run our code:
 
 2: Our [data](https://www.ncbi.nlm.nih.gov/sra/?term=SRR17782)
 
-3. Mothur [download](https://mothur.org/wiki/Download_mothur)
+3: Mothur [download](https://mothur.org/wiki/Download_mothur)
 
-4. Silva reference [files](https://mothur.org/wiki/Silva_reference_file) (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
+4: Silva reference [files](https://mothur.org/wiki/Silva_reference_file) (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
 
 5: RDP reference [files](https://mothur.org/wiki/RDP_reference_files) (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
 
