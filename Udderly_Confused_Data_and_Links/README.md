@@ -13,9 +13,10 @@ Here are the links to data utilized to run our code:
 
 *Specific Links/Data*
 
-1: SRA-Toolkit [https://www.ncbi.nlm.nih.gov/sra/?term=SRR1778214]
+1: [SRA-Toolkit] (https://www.ncbi.nlm.nih.gov/sra/?term=SRR1778214)
 
-2: Our [https://www.ncbi.nlm.nih.gov/sra/?term=SRR17782](data)
+2: Our [data](https://www.ncbi.nlm.nih.gov/sra/?term=SRR17782)
+
 https://mothur.org/wiki/Silva_reference_files - Silva reference files (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
 2: https://mothur.org/wiki/RDP_reference_files - RDP reference files (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
 3: https://mothur.org/wiki/Greengenes-formatted_databases - Greengenes reference files (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
