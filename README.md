@@ -19,4 +19,3 @@ A copy of our Powerpoint presentation on our work.
 Title of the actual paper is:  
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;**"Characterising the bacterial microbiota across the gastrointestinal tracts of dairy cattle:  
 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; membership and potential function"**
->>>>>>> a9fb00dec5c5f1639c9d0bba0ecdf855daf609da
