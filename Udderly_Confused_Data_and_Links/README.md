@@ -13,14 +13,16 @@ Here are the links to data utilized to run our code:
 
 *Specific Links/Data*
 
-1: [SRA-Toolkit] (https://www.ncbi.nlm.nih.gov/sra/?term=SRR1778214)
+1: [SRA-Toolkit](https://www.ncbi.nlm.nih.gov/sra/?term=SRR1778214)
 
 2: Our [data](https://www.ncbi.nlm.nih.gov/sra/?term=SRR17782)
 
-https://mothur.org/wiki/Silva_reference_files - Silva reference files (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
-2: https://mothur.org/wiki/RDP_reference_files - RDP reference files (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
-3: https://mothur.org/wiki/Greengenes-formatted_databases - Greengenes reference files (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
-4: https://mothur.org/wiki/Download_mothur  -  Mothur download
-5: Our data - 14
-6: 
-All additional intermediary files for Mothur analysis can be given upon request (SRR.trim.qual, SRR.trim.unique.align, SRR.trim.unique.pick.align are all too big to be stored on Github)
+3. Mothur [download](https://mothur.org/wiki/Download_mothur)
+
+4. Silva reference [files](https://mothur.org/wiki/Silva_reference_file) (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
+
+5: RDP reference [files](https://mothur.org/wiki/RDP_reference_files) (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
+
+6: Greengenes reference [files](https://mothur.org/wiki/Greengenes-formatted_databases) (for alignment, chimera check and classification. Currently zipped and need to be unzipped for use)
+
+**All additional intermediary files for Mothur analysis can be given upon request (SRR.trim.qual, SRR.trim.unique.align, SRR.trim.unique.pick.align are all too big to be stored on Github)**
