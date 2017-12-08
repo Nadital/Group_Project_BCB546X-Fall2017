@@ -23,8 +23,8 @@ As shown in the table above and the figure below, Firmicutes dominated all mucos
 In the original paper, the data analysis was comprehensive but lacked documentation. Per the materials and methods, the amplicons were paired-end seqeunced on an Illumina MiSeq platform and raw FASTQ files were receved. These raw FASTQ files were demultiplexed and quality filtered using QIIME 1.70 with a variety of criteria. Unassembled reads were discarded. They clustered OTUs with a 97% similarity cut-off using UPARSE. They used UCHIME to identify and remove chimeric sequences. They designated ‘representative sequences’ as the most abundant sequences within each OTU. These representative sequences were then aligned against Greengenes 13.5 using PYNAST. Alignment was conducted with the default parameters set by QIIME. QIIME-provided PH Lane mask was used to remove hypervariable regions from the aligned sequences. The authors then generated a phylogenetic tree of the assigned representative sequences, using FASTTREE. Finally, sequence classification was conducted with the Ribosomal Database Project (RDP) with an 80 % standard minimum support threshold. 
 
 **<i>Explanation of technical details of analysis replication**</i>
-
-*MOTHUR*
+  
+*MOTHUR*  
 SRA Database:  SRA Toolkit was needed to download the sequences. We also downloaded the sequences with the ENA 
 Q
 uality Control: We needed to transform the data into something more manageable. This included truncating reads based on quality, culling reads based on false read lengths, removal of chimeras and assigning groups and names to each sequence (Mothur only). This then allowed us to align the file to a reference database.
@@ -37,4 +37,6 @@ Visualization: in this step, using the Qiime software and R software, we were ab
 
 
 
-Summarization of replication of original results
+**<i>Summarization of replication of original results:</i>**
+
+We were unable to replicate the results with Mothur, but we were able to complete the analysis with QIIME on one rumen mucosa sample from one cow. The phylum breakdown from this one sample does not represent the collective data from every cow. This can be seen in the breakdowns of the phyla. We noticed that the phylum composition shift is not completely identical between the single sample versus the entirety. In our sample in particular, Proteobacteria seem to be in higher abundance than Bacteroidetes, for example. However, all the major representative phyla are there in both analyses, indicating that if all samples were run through our pipeline, the combined data would be very similar to their data.
