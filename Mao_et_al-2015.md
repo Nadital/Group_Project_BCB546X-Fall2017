@@ -24,7 +24,7 @@ In the original paper, the data analysis was comprehensive but lacked documentat
 
 **<i>Explanation of technical details of analysis replication**</i>
   
-*MOTHUR*  
+*MOTHUR and QIIME*  
 SRA Database:  SRA Toolkit was needed to download the sequences. We also downloaded the sequences with the ENA.  
 
 Quality Control: We needed to transform the data into something more manageable. This included truncating reads based on quality, culling reads based on false read lengths, removal of chimeras and assigning groups and names to each sequence (Mothur only). This then allowed us to align the file to a reference database.  
