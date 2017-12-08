@@ -20,9 +20,17 @@ As shown in the table above and the figure below, Firmicutes dominated all mucos
 
 [![phyla_dairy_cattle_BCB_group_project.jpg](https://s7.postimg.org/5mac9v1sr/phyla_dairy_cattle_BCB_group_project.jpg)](https://postimg.org/image/ki8vhgd7b/)
 
-In the original paper, the data analysis was comprehensive but lacked documentation. Per the materials and methods, the amplicons were paired-end seqeunced on an Illumina MiSeq platform and raw FASTQ files were receved. These raw FASTQ files were demultiplexed and quality filtered using QIIME 1.70 with a variety of criteria. Unassembled reads were discarded. They clustered OTUs with a 97% similarity cut-off using UPARSE. They used UCHIME to identify and remove chimeric sequences. The most abundant sequences within each OTU were designated as 'representative sequences' and aligned against the core set of Greengenes 13.5 using PYNAST with the default parameters set by QIIME. A PH Lane mask supplied by QIIME was used to remove hypervariable regions from the aligned sequences. FASTTREE was used to create a phylogenetic tree of the representative sequences. Sequences were classified using the Ribosomal Database Project (RDP) classifier with a standard minimum support threshold of 80%. 
+In the original paper, the data analysis was comprehensive but lacked documentation. Per the materials and methods, the amplicons were paired-end seqeunced on an Illumina MiSeq platform and raw FASTQ files were receved. These raw FASTQ files were demultiplexed and quality filtered using QIIME 1.70 with a variety of criteria. Unassembled reads were discarded. They clustered OTUs with a 97% similarity cut-off using UPARSE. They used UCHIME to identify and remove chimeric sequences. They designated ‘representative sequences’ as the most abundant sequences within each OTU. These representative sequences were then aligned against Greengenes 13.5 using PYNAST. Alignment was conducted with the default parameters set by QIIME. QIIME-provided PH Lane mask was used to remove hypervariable regions from the aligned sequences. The authors then generated a phylogenetic tree of the assigned representative sequences, using FASTTREE. Finally, sequence classification was conducted with the Ribosomal Database Project (RDP) with an 80 % standard minimum support threshold. 
 
-*Explanation of technical details of analysis replication*
+**<i>Explanation of technical details of analysis replication**</i>
+
+*MOTHUR*
+SRA Database
+SRA Toolkit was needed to download the sequences. We also downloaded the sequences with the ENA 
+Quality Control: We needed to transform the data into something more manageable. This included truncating reads based on quality, culling reads based on false read lengths, removal of chimeras and assigning groups and names to each sequence (Mothur only). This then allowed us to align the file to a reference database.
+Alignment: We compared sequences to a reference database that contained comprehensive coverage of sequences. Any portion of the sequences that was not covered in the alignment, however, were removed via this step. Once aligned, the files would fit the classification and not confuse the later commands with mismatched base pairs.
+Classification: This step was needed to assign taxonomical classification to each OTU. At this step, we turn the data into workable data, and we can begin to understand Who is there (based on 16s only, with a 97% cutoff)
+Visualization: in this step, using the Qiime software and R software, we were able to replicate the abundance stacked bar-chart that represent relative abundance percentages of present phyla. This was the ultimate end of our work, as it provided a comparable graph (only one sample was used, possibly explaining variation in data).
 
 
 
