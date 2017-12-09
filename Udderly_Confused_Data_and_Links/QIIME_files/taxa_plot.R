@@ -1,7 +1,7 @@
 
 # Load the taxonomy table
 library(readxl)
-taxa<- read_excel("Desktop/SRR1778214.fasta/taxa_assignment_cleaned.xls")
+taxa<- read_excel("https://github.com/Nadital/UC_BCB546X-Fall2017/tree/master/Udderly_Confused_Data_and_Links/QIIME_files")
 # Only leave the phylum information, disgard the header information
 taxa<-taxa[,2]
 
